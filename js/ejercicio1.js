@@ -3,3 +3,9 @@
  */
 
 
+mostrarAlerta()
+
+function mostrarAlerta(){
+    alert(' Ejercicio 1 => Mostramos un mensaje a traves de alert ');
+}
+
