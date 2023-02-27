@@ -4,24 +4,17 @@
 calcularElMayorDeTresNumero(); 
 
 function calcularElMayorDeTresNumero(){
-var numeroA = prompt("ingrese el valor del numero A"); 
-var numeroB = prompt("ingrese el valor del numero B"); 
-var numeroC = prompt("ingrese el valor del numero C"); 
+var numeroA = parseInt(prompt("ingrese el valor del numero A")); 
+var numeroB = parseInt(prompt("ingrese el valor del numero B")); 
+var numeroC = parseInt(prompt("ingrese el valor del numero C")); 
 
-if(parseInt(numeroA) > parseInt(numeroB) && parseInt(numeroA) > parseInt(numeroC)){
-document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${(parseInt(numeroA))}</span> </p>`)
-}
-
-if(parseInt(numeroB) > parseInt(numeroA) && parseInt(numeroB) > parseInt(numeroC)){
-    document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${(parseInt(numeroB))}</span> </p>`)
-}
-
-if(parseInt(numeroC) > parseInt(numeroA) && parseInt(numeroC) > parseInt(numeroB)){
-    document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${(parseInt(numeroC))}</span> </p>`)
- }
-
- if(parseInt(numeroC) ===  parseInt(numeroA) === parseInt(numeroB)  || parseInt(numeroC) ===  parseInt(numeroB) || parseInt(numeroB) ===  parseInt(numeroA) ){
+if(numeroA  > numeroB && numeroA  >numeroC){
+document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${numeroA }</span> </p>`)
+}else if (numeroB > numeroC){
+    document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${numeroB}</span> </p>`)
+}else if( numeroC > numeroA ){
+    document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > ${numeroC}</span> </p>`)
+ }else  if( numeroC ===  numeroA    || numeroC ===  numeroB || numeroB ===  numeroA  ){
     document.write(`<p style= "color: black; font-size: 30px"> El mayor entre  los Numeros A  (${numeroA}) , B  (${numeroB})  y  C (${numeroC}) es: <span style= "color: red; font-size: 30px" > los  numeros son iguales</span> </p>`)
  }
-
 }
