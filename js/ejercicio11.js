@@ -6,7 +6,7 @@ esDivisibleEn2();
 
 function esDivisibleEn2(){
     var numeroA = prompt("ingrese el valor del numero A"); 
-    var element = parseInt(numeroA);
+    var element = numeroA ;
 
 if(element% 2 === 0 ){
     document.write(`<p style= "color: black; font-size: 30px">  El Numeros A (${element})  <span style= "color: red; font-size: 30px" >Es divisible en 2 </span> </p>`)
