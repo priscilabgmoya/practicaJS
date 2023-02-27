@@ -2,9 +2,9 @@
  * 11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
  */
 
-esDivisibleEn2();
+esDivisible();
 
-function esDivisibleEn2(){
+function esDivisible(){
     var numeroA = prompt("ingrese el valor del numero A"); 
     var element = parseInt(numeroA);
 
