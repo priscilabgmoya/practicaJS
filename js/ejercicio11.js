@@ -2,11 +2,12 @@
  * 11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
  */
 
-esDivisibleEn2();
+esDivisible();
+
 
 function esDivisibleEn2(){
     var numeroA = parseInt(prompt("ingrese el valor del numero A")); 
-   
+
 
 if(numeroA% 2 === 0 ){
     document.write(`<p style= "color: black; font-size: 30px">  El Numeros A (${element})  <span style= "color: red; font-size: 30px" >Es divisible en 2 </span> </p>`)
